@@ -22,7 +22,7 @@ def bfs(x, y, m):
             nx = X + dx[i]
             ny = Y + dy[i]
             if 0 <= nx < n and 0 <= ny < n:
-                if arr[nx][ny] <= m and visited[nx][ny] == 0:
+                if arr[nx][ny] > m and visited[nx][ny] == 0:
                     visited[nx][ny] = 1
                     Q.append((nx, ny))
 
